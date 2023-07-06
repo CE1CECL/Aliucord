@@ -33,7 +33,7 @@ public final class Constants {
     }
 
     /** Link to the Aliucord github repo */
-    public static final String ALIUCORD_GITHUB_REPO = "https://github.com/ChrisEric1/Aliucord";
+    public static final String ALIUCORD_GITHUB_REPO = "https://github.com/CE1CECL/Aliucord";
     /** Link to Aliucord's Patreon */
     public static final String ALIUCORD_PATREON = "";
     /** Code of the Aliucord discord server */
