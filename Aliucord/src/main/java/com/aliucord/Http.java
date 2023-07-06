@@ -283,7 +283,7 @@ public class Http {
         public Request(String url, String method) throws IOException {
             conn = (HttpURLConnection) new URL(url).openConnection();
             conn.setRequestMethod(method.toUpperCase());
-            conn.addRequestProperty("User-Agent", "Aliucord (https://github.com/Aliucord/Aliucord)");
+            conn.addRequestProperty("User-Agent", undefined);
         }
 
         /**
@@ -494,6 +494,7 @@ public class Http {
             req.setHeader("User-Agent", headersProvider.getUserAgent())
                 .setHeader("X-Super-Properties", AnalyticSuperProperties.INSTANCE.getSuperPropertiesStringBase64())
                 .setHeader("Accept", "*/*")
+                .setHeader("Access-Control-Allow-Origin", "*")
                 .setHeader("Authorization", headersProvider.getAuthToken())
                 .setHeader("Accept-Language", headersProvider.getAcceptLanguages())
                 .setHeader("X-Discord-Locale", headersProvider.getLocale());
@@ -534,6 +535,7 @@ public class Http {
                 .setHeader("X-Super-Properties", RNSuperProperties.getSuperPropertiesBase64())
                 .setHeader("Accept-Language", headersProvider.getAcceptLanguages())
                 .setHeader("Accept", "*/*")
+                .setHeader("Access-Control-Allow-Origin", "*")
                 .setHeader("Authorization", headersProvider.getAuthToken())
                 .setHeader("X-Discord-Locale", headersProvider.getLocale())
                 .setHeader("X-Discord-Timezone", TimeZone.getDefault().getID());
@@ -541,7 +543,7 @@ public class Http {
         }
 
         private static String getDiscordRoute(String route) {
-            return route.startsWith("http") ? route : "https://discord.com/api/v9" + route;
+            return route.startsWith("http") ? route : "http://LenovoLegionT5:96/spacebar/api/v9" + route;
         }
     }
 

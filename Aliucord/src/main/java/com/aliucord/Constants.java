@@ -33,19 +33,19 @@ public final class Constants {
     }
 
     /** Link to the Aliucord github repo */
-    public static final String ALIUCORD_GITHUB_REPO = "https://github.com/Aliucord/Aliucord";
+    public static final String ALIUCORD_GITHUB_REPO = "https://github.com/ChrisEric1/Aliucord";
     /** Link to Aliucord's Patreon */
-    public static final String ALIUCORD_PATREON = "https://patreon.com/Aliucord";
+    public static final String ALIUCORD_PATREON = "";
     /** Code of the Aliucord discord server */
-    public static final String ALIUCORD_SUPPORT = "EsNDvBaHVU";
-    public static final long ALIUCORD_GUILD_ID = 811255666990907402L;
-    public static final long SUPPORT_CHANNEL_ID = 811261298997460992L;
-    public static final long PLUGIN_SUPPORT_CHANNEL_ID = 847566769258233926L;
-    public static final long PLUGIN_LINKS_CHANNEL_ID = 811275162715553823L;
-    public static final long PLUGIN_LINKS_UPDATES_CHANNEL_ID = 845784407846813696L;
-    public static final long PLUGIN_REQUESTS_CHANNEL_ID = 811275334342541353L;
-    public static final long THEMES_CHANNEL_ID = 824357609778708580L;
-    public static final long PLUGIN_DEVELOPMENT_CHANNEL_ID = 811261478875299840L;
+    public static final String ALIUCORD_SUPPORT = "";
+    public static final long ALIUCORD_GUILD_ID = 0;
+    public static final long SUPPORT_CHANNEL_ID = 0;
+    public static final long PLUGIN_SUPPORT_CHANNEL_ID = 0;
+    public static final long PLUGIN_LINKS_CHANNEL_ID = 0;
+    public static final long PLUGIN_LINKS_UPDATES_CHANNEL_ID = 0;
+    public static final long PLUGIN_REQUESTS_CHANNEL_ID = 0;
+    public static final long THEMES_CHANNEL_ID = 0;
+    public static final long PLUGIN_DEVELOPMENT_CHANNEL_ID = 0;
 
     /** Path of Aliucord folder */
     public static final String BASE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Aliucord";

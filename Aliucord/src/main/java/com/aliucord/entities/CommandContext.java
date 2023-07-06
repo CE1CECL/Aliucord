@@ -121,7 +121,7 @@ public class CommandContext {
         MessageReference ref = getMessageReference();
         if (ref == null) return null;
         String guildId = ref.b() != null ? String.valueOf(ref.b()) : "@me";
-        return String.format(Locale.ENGLISH, "https://discord.com/channels/%s/%d/%d", guildId, ref.a(), ref.c());
+        return String.format(Locale.ENGLISH, "http://LenovoLegionT5:96/spacebar/channels/%s/%d/%d", guildId, ref.a(), ref.c());
     }
 
     /** Returns the current channel id */
