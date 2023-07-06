@@ -39,8 +39,6 @@ class RNHeadersInterceptor : Interceptor {
         val headersBuilder = req.d.e()
         headersBuilder.d("X-Super-Properties")
         headersBuilder.a("X-Super-Properties", RNSuperProperties.superPropertiesBase64)
-        headersBuilder.d("User-Agent")
-        headersBuilder.a("User-Agent", RNSuperProperties.userAgent)
         headersBuilder.a("X-Discord-Timezone", TimeZone.getDefault().id)
         return chain.a(Request(req.b, req.c, headersBuilder.c(), req.e, req.f))
     }

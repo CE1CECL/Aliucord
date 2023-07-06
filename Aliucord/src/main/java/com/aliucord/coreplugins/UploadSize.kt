@@ -119,7 +119,6 @@ internal class UploadSize : Plugin(Manifest("UploadSize")) {
                     val initRes = initReq.json(InitAttachmentUploadRes::class.java).attachments[0]
 
                     val uploadReq = Http.Request(initRes.upload_url, "PUT")
-                        .setHeader("User-Agent", RNSuperProperties.userAgent)
                         .setHeader("Content-Type", upload.mimeType)
                         .setHeader("Content-Length", upload.contentLength.toString())
                     uploadReq.conn.doOutput = true

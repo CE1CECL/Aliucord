@@ -30,7 +30,6 @@ object RNSuperProperties {
         put("client_version", versionString)
         put("release_channel", "betaRelease")
         put("device_vendor_id", vendorId)
-        put("browser_user_agent", "")
         put("browser_version", "")
         put("os_version", Build.VERSION.SDK_INT.toString())
         put("client_build_number", versionCode)
@@ -44,5 +43,4 @@ object RNSuperProperties {
     // update to latest Beta branch sometimes
     const val versionCode = 183109
     const val versionString = "183.9 - rn"
-    const val userAgent = "Discord-Android/$versionCode;RNA"
 }
